@@ -1,0 +1,41 @@
+$dd: yellow;
+@mixin bluesize {
+  color: blue;
+  font-size: 15px;
+}
+@mixin red($color) {
+  color: $color;
+  border: 1px solid $color;
+}
+@mixin rwd {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.aa {
+  h2 {
+    @include bluesize;
+  }
+}
+
+.bb {
+  h2 {
+    @include red(red);
+  }
+}
+
+.cc {
+  h2 {
+    color: $dd;
+  }
+}
+
+.dd {
+  h2 {
+    @include rwd {
+      font-size: 50px;
+      color: blueviolet;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.aa h2 {
+  color: blue;
+  font-size: 15px;
+}
+
+.bb h2 {
+  color: red;
+  border: 1px solid red;
+}
+
+.cc h2 {
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  .dd h2 {
+    font-size: 50px;
+    color: blueviolet;
+  }
+}
+/*# sourceMappingURL=123.css.map */
